@@ -10,7 +10,6 @@
 </head>
 
 <body>
-
     <header>
         <h1>Multi App</h1>
         <p>Dar vida al sitio web utilizando JavaScript.</p>
@@ -19,45 +18,45 @@
     <main>
         <section>
             <h2>1️⃣ Saludar al Usuario</h2>
-            <input type="text" placeholder="Escriba su nombre">
-            <button>Saludar</button>
+            <input type="text" id="input-saludo" placeholder="Escriba su nombre">
+            <button id="btn-saludar">Saludar</button>
         </section>
 
         <section>
             <h2>2️⃣ Cambiar Mensaje</h2>
             <h5>Su mensaje es: </h5>
-            <p></p>
-            <input type="text" placeholder="Escriba el texto">
-            <button>Cambiar</button>
+            <p id="texto-mensaje"></p>
+            <input type="text" id="input-mensaje" placeholder="Escriba el texto">
+            <button id="btn-cambiar">Cambiar</button>
         </section>
 
         <section>
             <h2>3️⃣ Contador</h2>
-            <p>Contador: <strong>0</strong></p>
+            <p>Contador: <strong id="texto-contador">0</strong></p>
             <input type="text" placeholder="Escriba su nombre">
             <div>
-                <button>++</button>
-                <button>−−</button>
-                <button>↻</button>
+                <button id="btn-sumar">++</button>
+                <button id="btn-restar">−−</button>
+                <button id="btn-reiniciar">↻</button>
             </div>
         </section>
 
         <section>
             <h2>4️⃣ Mostrar y Ocultar</h2>
-            <img src="https://picsum.photos/200/300">
+            <img id="imagen-toggle" src="https://picsum.photos/200/300" alt="Imagen aleatoria">
             <div>
-                <button>Mostrar</button>
-                <button>Ocultar</button>
+                <button id="btn-mostrar">Mostrar</button>
+                <button id="btn-ocultar">Ocultar</button>
             </div>
         </section>
-
     </main>
 
     <footer>
-        <small>
-            Programación en Ambiente Web I · JavaScript + MVC
-        </small>
+        <small>Programación en Ambiente Web I · JavaScript + MVC</small>
     </footer>
+
+    <script src="js/model.js"></script>
+    <script src="js/controller.js"></script>
 </body>
 
 </html>
